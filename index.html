@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практикум по историографии | Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="ru" onclick="switchLanguage('ru')">РУС</button>
+        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">ENG</button>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <svg width="180" height="60" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+                <rect width="180" height="60" rx="10" fill="#2a5298"/>
+                <text x="90" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Историограф</text>
+            </svg>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="section">
+            <ul class="nav-links">
+                <li><a href="index.html" data-lang-key="nav_home">Главная</a></li>
+                <li><a href="news.html" data-lang-key="nav_news">Новости</a></li>
+                <li><a href="about.html" data-lang-key="nav_about">Об авторе</a></li>
+                <li><a href="contact.html" data-lang-key="nav_contact">Обратная связь</a></li>
+                <li><a href="products.html" data-lang-key="nav_products">Продукты и услуги</a></li>
+            </ul>
+            
+            <!-- БАННЕР 1 - СПЕЦПРЕДЛОЖЕНИЕ -->
+            <div class="banner banner-image" style="background-image: url('images/banner-special.jpg');">
+                <p class="discount-text" data-lang-key="banner_special"> SPECIAL OFFER </p>
+                <p data-lang-key="banner_special_text">Скидка 20% на все курсы</p>
+                <p class="small-text" data-lang-key="banner_special_date">Только до конца месяца!</p>
+            </div>
+            
+            <!-- БАННЕР 2 - АКЦИЯ -->
+            <div class="banner banner-image" style="background-image: url('images/banner-discount.jpg');">
+                <p class="discount-percent" data-lang-key="banner_discount_percent">-20%</p>
+                <p data-lang-key="banner_discount_text">При заказе от 2 курсов</p>
+                <p class="small-text" data-lang-key="banner_discount_date">Успейте записаться!</p>
+            </div>
+        </aside>
+
+        <main class="article">
+            <!-- ГЛАВНЫЙ БАННЕР -->
+            <div class="main-banner" style="background-image: url('images/91664932bdf64058cf6dc36a231e9a1a.jpg');">
+                <h2 data-lang-key="home_title">Добро пожаловать на практикум по историографии</h2>
+                <p data-lang-key="home_subtitle">Погрузитесь в мир истории исторической науки</p>
+                <a href="products.html" class="download-btn" data-lang-key="home_start_btn">Начать обучение</a>
+            </div>
+            
+            <div class="about-content">
+                <h2 data-lang-key="home_what_learn">Что вы узнаете?</h2>
+                <ul>
+                    <li data-lang-key="learn1">Основные этапы развития исторической науки</li>
+                    <li data-lang-key="learn2">Методологию исторического исследования</li>
+                    <li data-lang-key="learn3">Работу с архивными источниками</li>
+                    <li data-lang-key="learn4">Современные подходы в историографии</li>
+                </ul>
+                
+                <h2 data-lang-key="home_why_us">Почему выбирают нас?</h2>
+                
+                <!-- Карточки преимуществ -->
+                <div class="features-grid">
+                    <div class="feature-card" style="background-image: url('images/53cdb083b354ea8baca9baf79d7b2030.jpg');">
+                       
+                        <h3 data-lang-key="feature1_title">Эксперты-историки</h3>
+                        <p data-lang-key="feature1_text">Преподаватели с многолетним опытом</p>
+                    </div>
+                    
+                    <div class="feature-card" style="background-image: url('images/88e92ad520a056dcd2b85d403ecadd60.jpg');">
+                       
+                        <h3 data-lang-key="feature2_title">Уникальные материалы</h3>
+                        <p data-lang-key="feature2_text">Доступ к архивным документам</p>
+                    </div>
+                    
+                    <div class="feature-card" style="background-image: url('images/7954ddbd2fc9230cbd63ec5fa06fd1a0.jpg');">
+                       
+                        <h3 data-lang-key="feature3_title">Поддержка 24/7</h3>
+                        <p data-lang-key="feature3_text">Помощь на всех этапах обучения</p>
+                    </div>
+                </div>
+                
+                <h2 style="margin-top: 30px;" data-lang-key="home_materials">Доступные материалы</h2>
+                <p data-lang-key="home_text">На нашем сайте вы найдете учебные пособия, методические рекомендации, примеры исследований и многое другое.</p>
+                <a href="#" class="download-btn" data-lang-key="home_download_program"> Скачать программу курса</a>
+                <a href="#" class="download-btn" data-lang-key="home_download_literature">Скачать список литературы</a>
+            </div>
+        </main>
+
+        <aside class="aside">
+            <div class="tag-cloud">
+                <h3 data-lang-key="tags_title">Облако тегов</h3>
+                <div class="tags">
+                    <span class="tag" data-lang-tag="historiography">историография</span>
+                    <span class="tag" data-lang-tag="archives">архивы</span>
+                    <span class="tag" data-lang-tag="sources">источники</span>
+                    <span class="tag" data-lang-tag="methodology">методология</span>
+                    <span class="tag" data-lang-tag="research">исследования</span>
+                    <span class="tag" data-lang-tag="publications">публикации</span>
+                </div>
+            </div>
+            
+            <!-- ПРАВЫЙ БАННЕР -->
+            <div class="banner banner-image" style="background-image: url('images/f1d7e7d3ed2c189cba62c00e4ae59aa5.jpg');">
+                <p data-lang-key="banner_new_book">Новая монография</p>
+                <p class="small-text" data-lang-key="banner_new_book_text">Скидка 20% для подписчиков</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4 data-lang-key="footer_company">ООО "Историограф"</h4>
+                <p data-lang-key="footer_address">г. Ростов-на-Дону. Ул. ************ 140</p>
+                <p data-lang-key="footer_phone"> +7 (***) ***-**-**</p>
+                <p data-lang-key="footer_email"> info@istoriografia.ru</p>
+            </div>
+            <div class="footer-creator">
+                <h4 data-lang-key="footer_created_by">Создатель сайта:</h4>
+                <p data-lang-key="footer_name">Власова Анастаися Дмитриевна, Макарова Алиса Артуровна</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

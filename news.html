@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Практикум по историографии</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="ru" onclick="switchLanguage('ru')">РУС</button>
+        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">ENG</button>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <svg width="180" height="60" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+                <rect width="180" height="60" rx="10" fill="#2a5298"/>
+                <text x="90" y="38" text-anchor="middle" fill="white" font-size="20" font-weight="bold">Историограф</text>
+            </svg>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="section">
+            <ul class="nav-links">
+                <li><a href="index.html" data-lang-key="nav_home">Главная</a></li>
+                <li><a href="news.html" data-lang-key="nav_news">Новости</a></li>
+                <li><a href="about.html" data-lang-key="nav_about">Об авторе</a></li>
+                <li><a href="contact.html" data-lang-key="nav_contact">Обратная связь</a></li>
+                <li><a href="products.html" data-lang-key="nav_products">Продукты и услуги</a></li>
+            </ul>
+            <div class="banner">
+                <p data-lang-key="banner_promo">Специальное предложение!</p>
+            </div>
+            <div class="banner">
+                <p data-lang-key="banner_discount">Скидка 20% на все курсы</p>
+            </div>
+        </aside>
+
+        <main class="article">
+            <h1 data-lang-key="news_title">Новости практикума</h1>
+            
+            <div class="news-card">
+                <div class="news-date">15 марта 2024</div>
+                <h3 class="news-title">Новый курс по источниковедению</h3>
+                <p class="news-excerpt">Запущен новый онлайн-курс "Источниковедение XX века". Курс включает лекции, семинары и практические занятия с архивными документами.</p>
+                <a href="#" class="download-btn" data-lang-key="download"> Скачать программу</a>
+            </div>
+
+            <div class="news-card">
+                <div class="news-date">1 марта 2024</div>
+                <h3 class="news-title">Международная конференция</h3>
+                <p class="news-excerpt">Приглашаем принять участие в международной конференции "Историография в цифровую эпоху", которая пройдет 15-17 мая 2024 года.</p>
+                <a href="#" class="download-btn" data-lang-key="download"> Скачать информационное письмо</a>
+            </div>
+
+            <div class="news-card">
+                <div class="news-date">20 февраля 2024</div>
+                <h3 class="news-title">Новая монография</h3>
+                <p class="news-excerpt">Вышла в свет монография "Методология исторического исследования: современные подходы". Доступна для скачивания.</p>
+                <a href="#" class="download-btn" data-lang-key="download"> Скачать монографию</a>
+            </div>
+
+            <div class="news-card">
+                <div class="news-date">5 февраля 2024</div>
+                <h3 class="news-title">Вебинар по архивоведению</h3>
+                <p class="news-excerpt">Состоится бесплатный вебинар "Работа с архивными документами: практические советы". Регистрация открыта.</p>
+                <a href="#" class="download-btn" data-lang-key="download"> Скачать материалы</a>
+            </div>
+        </main>
+
+        <aside class="aside">
+            <div class="tag-cloud">
+                <h3 data-lang-key="tags_title">Облако тегов</h3>
+                <div class="tags"></div>
+            </div>
+            <div class="banner">
+                <p data-lang-key="banner_placeholder">Место для баннера</p>
+            </div>
+        </aside>
+    </div>
+
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4 data-lang-key="footer_company">ООО "Историограф"</h4>
+                <p>г. Ростов-на-Дону. Ул. ************ 140</p>
+                <p> +7 (***) ***-**-**</p>
+                <p> info@istoriografia.ru</p>
+            </div>
+            <div class="footer-creator">
+                <h4 data-lang-key="footer_created_by">Создатель сайта:</h4>
+                <p>Власова Анастаися Дмитриевна, Макарова Алиса Артуровна</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
